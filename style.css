@@ -31,7 +31,9 @@ li{display: flex;}
   main{
     display: flex; flex-direction: column;
    }
-  
+   align-items: center;
+   flex-direction: column;
+ }
   body {
     ;
       margin: 25px 6%;
@@ -47,13 +49,22 @@ li{display: flex;}
     margin-right: 3.5%;
   }
     
-}
+
 
 @media screen and (max-width: 480) {
   
  main{
-  display: flex; flex-direction: column;
+  display: flex; flex-direction: column;  align-items: center;
+  flex-direction: column; flex-flow: column wrap;
+}
  }
-
-  
+ .menu{display: none;}
+.navbar{display: flex; justify-content: flex-end;}
+.hamburger{justify-content: flex-end;}
+ .logo > img {
+  width: 40px;
+  align-items: center;
+}
+.product{display: flex;
+  align-items: center; justify-content: space-evenly;flex-flow: column wrap; border-style: hidden; border-color: black;
 }
